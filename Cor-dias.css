@@ -14,7 +14,7 @@ body{
     font-weight: bold;
     height: fit-content;
     padding: 12px;
-    width: 380px;
+    width: 300px;
     border-radius: 12px 12px 0 0;
     margin: 44vh auto 0 auto;
     justify-content: center;
@@ -25,7 +25,7 @@ body{
     border-radius: 0 0 12px 12px;
     height: fit-content;
     margin: 0 auto;
-    width: 380px;
+    width: 300px;
 }
 #cortext    {
     font-size: 1.2rem;
