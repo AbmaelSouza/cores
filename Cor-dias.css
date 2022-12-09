@@ -1,0 +1,32 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    height: 100%;
+}
+
+.cor   {
+    display: block;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    height: fit-content;
+    padding: 12px;
+    width: 380px;
+    border-radius: 12px 12px 0 0;
+    margin: 44vh auto 0 auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#proxfolg{
+    border-radius: 0 0 12px 12px;
+    height: fit-content;
+    margin: 0 auto;
+    width: 380px;
+}
+#cortext    {
+    font-size: 1.2rem;
+}
