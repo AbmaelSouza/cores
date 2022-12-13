@@ -9,10 +9,19 @@ var cortexto = {
 var folgas = [];
 var proxfolga;
 var proxfolgadata;
+var datateste = 0;
 var data = new Date();
-data.setDate(data.getDate())
-data.setHours(0,0,0, 0)
+data.setDate(data.getDate() + datateste)
+data.setHours(0,0,0, 0);
+var amanha = new Date();
+amanha.setDate(amanha.getDate()+1+datateste);
+amanha.setHours(0,0,0,0);
+var damanha = new Date();
+damanha.setDate(damanha.getDate()+2+datateste);
+damanha.setHours(0,0,0,0);
 var diasem = data.getDay();
+var diasemamanha = amanha.getDay();
+var diasemdamanha = damanha.getDay();
 var dif = data.getTime() - d.getTime();
 var diasdif = Math.ceil( dif / 1000 / 60 / 60 / 24 ) ;
 var a = new Date("November 20, 2022");
@@ -46,9 +55,15 @@ $( document ).ready( function () {
     var diasemana = $( "#diasemana" );
     diasemana.append(dias[diasem][0].toUpperCase() + dias[diasem].slice(1));
     var cortext = $( "#cortext" );
+    var cortext2 = $( "#cortext2" );
+    var cortext3 = $( "#cortext3" );
     var diasfolga = $("#diasfolga");
     cortext.append(cor[diasem].toUpperCase());
     cortext.css("color", cortexto[cor[diasem]])
+    cortext2.append(cor[diasemamanha].toUpperCase());
+    cortext2.css("color", cortexto[cor[diasemamanha]])
+    cortext3.append(cor[diasemdamanha].toUpperCase());
+    cortext3.css("color", cortexto[cor[diasemdamanha]])
      if(checkfolga()) {
          diasfolga.append( "A sua folga é HOJE e "  );
          texto = "a "

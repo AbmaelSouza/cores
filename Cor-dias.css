@@ -21,11 +21,14 @@ body{
     align-items: center;
     text-align: center;
 }
-#proxfolg{
-    border-radius: 0 0 12px 12px;
+#proxfolg , #proxfolgcor, #proxfolgcor2{
+    border-radius: 0;
     height: fit-content;
     margin: 0 auto;
     width: 300px;
+}
+#proxfolgcor2{
+    border-radius: 0 0 12px 12px;
 }
 #cortext    {
     font-size: 1.2rem;
