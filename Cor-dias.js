@@ -87,16 +87,16 @@ $( document ).ready( function () {
     }else{ cortext3.append( "FOLGA" );
         cortext3.css( "color", cortexto[cor[diasemdamanha]] )}
     if (checkfolga() && checkfolgaam()) {
-        diasfolga.append( "A sua folga é HOJE e AMANHÃ" );
+        diasfolga.append( "A sua folga é: HOJE e AMANHÃ" );
     } else if (checkfolga()) {
-        diasfolga.append( "A sua folga é HOJE e " );
+        diasfolga.append( "A sua folga é: HOJE e " );
         if (proxfolgadata > 1) {
             texto2 = "s";
             texto = "a ";
             diasfolga.append( texto + "próxima folga é em " + proxfolgadata + " dia" + texto2 );}
 
         } else if (checkfolgaam()) {
-            diasfolga.append( "A sua folga é AMANHÃ" );
+            diasfolga.append( "A sua folga é: AMANHÃ" );
 
         }else { diasfolga.append( texto + "próxima folga é em " + proxfolgadata + " dia" + texto2 );}
 } );
