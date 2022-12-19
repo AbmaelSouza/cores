@@ -98,5 +98,7 @@ $( document ).ready( function () {
         } else if (checkfolgaam()) {
             diasfolga.append( "A sua folga é: AMANHÃ" );
 
-        }else { diasfolga.append( texto + "próxima folga é em " + proxfolgadata + " dia" + texto2 );}
+        }else {
+        texto2 = "s";
+        diasfolga.append( texto + "próxima folga é em " + proxfolgadata + " dia" + texto2 );}
 } );
