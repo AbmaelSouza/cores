@@ -24,14 +24,23 @@ var diasemamanha = amanha.getDay();
 var diasemdamanha = damanha.getDay();
 var dif = data.getTime() - d.getTime();
 var diasdif = Math.ceil( dif / 1000 / 60 / 60 / 24 );
-var a = new Date( "November 20, 2022" );
+
 folgas.push( d );
+//somente domingos
+var a = new Date( "November 20, 2022" );
 for (let i = 0; i <= diasdif / 2; i = i + 2) {
-    folgas.push( a );
-    a = new Date( a.setDate( a.getDate() + 1 ) );
     folgas.push( a );
     a = new Date( a.setDate( a.getDate() + 7 ) );
 }
+//escala 6/2
+//var a = new Date( "November 20, 2022" );
+
+// for (let i = 0; i <= diasdif / 2; i = i + 2) {
+//     folgas.push( a );
+//     a = new Date( a.setDate( a.getDate() + 1 ) );
+//     folgas.push( a );
+//     a = new Date( a.setDate( a.getDate() + 7 ) );
+// }
 for (let i = 0; i <= folgas.length; i++) {
     let a = folgas[i].getTime() - data.getTime();
     if (a > 0) {
