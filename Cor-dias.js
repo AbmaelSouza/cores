@@ -4,6 +4,7 @@ var cor = ["laranja", "branca", "laranja", "azul", "branca", "laranja", "azul"]
 var cortexto = {
     laranja: "#ffa500",
     branca: "#F0FFFF",
+    
     azul: "#6991ff"
 }
 var folgas = [];
